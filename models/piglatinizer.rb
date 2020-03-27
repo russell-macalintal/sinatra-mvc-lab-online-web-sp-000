@@ -1,8 +1,8 @@
 class PigLatinizer
   attr_accessor :original_text, :final_text
 
-  def initialize(text)
-    @original_text = text
+  def initialize
+    @original_text = ""
   end
 
   def translate
