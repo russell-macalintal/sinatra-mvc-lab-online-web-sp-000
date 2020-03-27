@@ -5,7 +5,7 @@
     <title>title</title>
   </head>
   <body>
-    <h1>Pig Latin Result</h1>
-    <h2><%= @translator.convert %></h2>
+    <h1>Here is your phrase in Pig Latin:</h1>
+    <h2><%= @translator.piglatinize(@orig_phrase) %></h2>
   </body>
 </html>
