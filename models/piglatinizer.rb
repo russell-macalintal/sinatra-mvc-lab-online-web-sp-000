@@ -13,7 +13,7 @@ class PigLatinizer
   end
 
   def pig_latin(word)
-    if word.chars[0] =~ /[aeiou]/
+    if word.downcase.chars[0] =~ /[aeiou]/
       word + "way"
     else
       if word.chars[1] =~ /[aeiou]/
