@@ -1,11 +1,10 @@
 class PigLatinizer
   attr_accessor :original_text, :final_text
 
-  def initialize
-    @original_text = ""
-  end
+  # def initialize
+  # end
 
-  def translate
+  def piglatinize(text)
     text_arr = @original_text.split(" ")
     text_arr.collect do |word|
       self.pig_latin(word)
