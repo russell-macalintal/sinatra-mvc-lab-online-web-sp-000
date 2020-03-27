@@ -27,8 +27,8 @@ class PigLatinizer
     end
   end
 
-  def convert
-    @final_text = self.translate.join(" ")
-  end
+  # def convert
+  #   @final_text = self.translate.join(" ")
+  # end
 
 end
