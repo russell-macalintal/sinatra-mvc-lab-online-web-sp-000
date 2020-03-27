@@ -2,10 +2,10 @@ class PigLatinizer
 
   def piglatinize(text)
     text_arr = text.split(" ")
-    text_arr.collect { |word| self.pig_latin(word) }.join(" ")
+    text_arr.collect { |word| self.convert(word) }.join(" ")
   end
 
-  def pig_latin(word)
+  def convert(word)
     if word.downcase.chars[0] =~ /[aeiou]/
       word + "way"
     else
