@@ -5,10 +5,8 @@ class PigLatinizer
   # end
 
   def piglatinize(text)
-    text_arr = @original_text.split(" ")
-    text_arr.collect do |word|
-      self.pig_latin(word)
-    end
+    text_arr = text.split(" ")
+    text_arr.collect { |word| self.pig_latin(word) }.join(" ")
   end
 
   def pig_latin(word)
