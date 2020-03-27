@@ -1,8 +1,4 @@
 class PigLatinizer
-  attr_accessor :original_text, :final_text
-
-  # def initialize
-  # end
 
   def piglatinize(text)
     text_arr = text.split(" ")
@@ -26,9 +22,5 @@ class PigLatinizer
       end
     end
   end
-
-  # def convert
-  #   @final_text = self.translate.join(" ")
-  # end
 
 end
